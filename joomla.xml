@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Joomla</Name>
+  <Repository>joomla:latest</Repository>
+  <Registry>https://hub.docker.com/_/joomla/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/joomla/joomla-cms</Project>
+  <Overview>Joomla is a free and open-source content management system (CMS) for publishing web content. It is built on a model&#x2013;view&#x2013;controller web application framework that can be used independently of the CMS. Joomla is written in PHP, uses object-oriented programming (OOP) techniques and software design patterns, stores data in a MySQL, MS SQL, or PostgreSQL database, and includes features such as page caching, RSS feeds, printable versions of pages, news flashes, blogs, search, and support for language internationalization. </Overview>
+  <Category>Network:Web</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://d1q6f0aelx0por.cloudfront.net/product-logos/library-joomla-logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1626377852</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Joomla is a free and open-source content management system (CMS) for publishing web content. It is built on a model&#x2013;view&#x2013;controller web application framework that can be used independently of the CMS. Joomla is written in PHP, uses object-oriented programming (OOP) techniques and software design patterns, stores data in a MySQL, MS SQL, or PostgreSQL database, and includes features such as page caching, RSS feeds, printable versions of pages, news flashes, blogs, search, and support for language internationalization. </Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8777</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value>Host:Port</Value>
+      <Name>JOOMLA_DB_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Joomla</Value>
+      <Name>JOOMLA_DB_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Password</Value>
+      <Name>JOOMLA_DB_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>joomla</Value>
+      <Name>JOOMLA_DB_NAME</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="mysql database host" Target="JOOMLA_DB_HOST" Default="" Mode="" Description="mysql type database host for your joomla content" Type="Variable" Display="always" Required="true" Mask="false">192.168.178.104:3307</Config>
+  <Config Name="Database user" Target="JOOMLA_DB_USER" Default="root" Mode="" Description="Database user for joomla" Type="Variable" Display="always" Required="true" Mask="false">Joomla</Config>
+  <Config Name="Database password" Target="JOOMLA_DB_PASSWORD" Default="" Mode="" Description="database password" Type="Variable" Display="always" Required="true" Mask="true">MySql_1a4B00MER</Config>
+  <Config Name="Database Name" Target="JOOMLA_DB_NAME" Default="joomla" Mode="" Description="Name of the joomla database&#13;&#10;If non existing it wil be created on startup, as long as the specified user has rights to do so" Type="Variable" Display="always" Required="true" Mask="false">joomla</Config>
+  <Config Name="Port" Target="80" Default="8080" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">8777</Config>
+</Container>
