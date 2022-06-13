@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>Crafty</Name>
+  <Name>Crafty-3</Name>
   <Repository>freddy0/crafty-container:latest</Repository>
   <Registry>https://hub.docker.com/r/freddy0/crafty-container</Registry>
   <Network>bridge</Network>
