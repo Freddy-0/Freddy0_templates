@@ -88,7 +88,7 @@ For migration from 3.x please refer to the documentation: https://wiki.craftycon
   <Labels/>
   <Config Name="Web UI Port" Target="8443" Default="8443" Mode="tcp" Description="Web UI [HTTPS]" Type="Port" Display="always-hide" Required="true" Mask="false">8443</Config>
   <Config Name="Minecraft ports" Target="25500-25600" Default="25500-25600" Mode="tcp" Description="Container Port: 25500-25600 yes, 100 ports for 100 possible Servers" Type="Port" Display="always-hide" Required="true" Mask="false">25500-25600</Config>
-  <Config Name="Port for dynmap" Target="8123" Default="8123" Mode="tcp" Description="Dynmap port" Type="Port" Display="always-hide" Required="true" Mask="false">8123</Config>
+  <Config Name="Port for dynmap" Target="8123" Default="8123" Mode="tcp" Description="Dynmap Port" Type="Port" Display="always-hide" Required="true" Mask="false">8123</Config>
   <Config Name="Port for bedrock server" Target="19132" Default="19132" Mode="udp" Description="Bedrock server port" Type="Port" Display="always-hide" Required="true" Mask="false">19132</Config>
   <Config Name="Server files" Target="/crafty/servers" Default="/mnt/user/appdata/crafty-4/servers/" Mode="rw" Description="Path to the minecraft server folders" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/crafty-4/servers/</Config>
   <Config Name="Backup files" Target="/crafty/backups" Default="/mnt/user/appdata/crafty-4/backups/" Mode="rw" Description="Server Backups" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/crafty-4/backups/</Config>
