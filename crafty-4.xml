@@ -2,8 +2,8 @@
 <Container version="2">
   <Beta>False</Beta>
   <Name>Crafty-4</Name>
-  <Registry>https://registry.gitlab.com/crafty-controller/</Registry>
-  <Repository>crafty-controller/crafty-4:latest</Repository>
+  <Repository>registry.gitlab.com/crafty-controller/crafty-4:latest</Repository>
+  <Registry>registry.gitlab.com/crafty-controller/crafty-4</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
