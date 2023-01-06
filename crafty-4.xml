@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Beta>False</Beta>
-  <Name>Crafty-4</Name>
+  <Name>Freddy0-Crafty-4</Name>
   <Repository>registry.gitlab.com/crafty-controller/crafty-4:latest</Repository>
   <Registry>registry.gitlab.com/crafty-controller/crafty-4</Registry>
   <Network>bridge</Network>
